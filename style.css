@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    transition: all ease-in-out .3s;
+}
+:root{
+    --piggi--: rgb(245, 95, 8);
+}
+body{
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.section-p{
+    padding: 60px 100px;
+}
+/* header */
+header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0, 0.4)),url(img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* navbar */
+.navbar-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    position: sticky;
+    background-color: #fff;
+}
+.logo{
+    width: 120px;
+    height: 100px;
+}
+.nav-item{
+    margin-right: 20px;
+    color: black;
+    text-transform: uppercase;
+}
+.nav-item-order{
+    background-color: var(--piggi--);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.nav-item-order:hover{
+    color: white !important;
+}
+.nav-item-order:hover.nav-item-order i{
+    padding-left: 10px !important;
+    color: white !important;
+}
+.nav-item i{
+    font-size: 18px;
+    margin-left: 5px;
+}
+.nav-item:hover{
+    color: var(--piggi--);
+}
+.nav-item-delivary{
+    position: relative;
+}
+.nav-item-delivary:hover .dropDown{
+    display: block !important;
+}
+.dropDown{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.685);
+    display: none;
+    color: black;
+    font-weight: normal;
+    width: 400px;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    padding: 20px 20px 20px 0;
+}
+.dropDown span{
+    color: var(--piggi--);
+}
+/* hero */
+.hero{
+    padding: 0 60px;
+}
+.hero h1{
+    margin-top: 200px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.459);
+    margin-bottom: 20px;
+}
+.hero h1:after{
+    content: "";
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    background-color: var(--piggi--);
+    bottom: 0;
+    margin-left: -100px;
+}
+.hero h1 span{
+    color: var(--piggi--);
+}
+.hero a{
+    display: inline-block;
+    background-color: var(--piggi--);
+    padding: 5px 30px;
+    text-transform: uppercase;
+    color: white;
+}
+.hero a:hover{
+    background-color: rgb(194, 75, 6);
+}
+/* banner */
+.banner{
+    width: 90% ;
+    margin: 0 auto;
+}
+.banner-data{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-content{
+    position: relative;
+    width: 30%;
+}
+.banner-content img{
+    width: 100%;
+    height: 350px;
+}
+.banner-decs{
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    padding-left: 20px;
+}
+.banner-decs h1{
+    color: black;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px white;
+    font-weight: 500;
+}
+.banner-decs a{
+    display: inline-block;
+    background-color: var(--piggi--);
+    padding: 3px 20px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 4px;
+}
+.banner-decs a:hover{
+    background-color: rgb(194, 75, 6);
+}
+/* manu */
+.manu{
+    width: 100%;
+    min-height: 70vh;
+    background-image: url(img/linear\ gradint\ background.png);
+    background-size: cover;
+    background-position: center;
+}
+.manu-header h1{
+    text-align: center;
+    font-size: 40px;
+    left: 1px;
+    position: relative;
+    padding-top: 100px;
+}
+.manu-header h1::after{
+    content: "";
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    background-color: var(--piggi--);
+    bottom: 0;
+    margin-left: -100px;
+}
+.manu-header h1 span{
+    color: var(--piggi--);
+}
+.manu-header p{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.manu-header p i{
+    font-size: 22px;
+    color: var(--piggi--);
+}
+.manu-header a{
+    width: 150px;
+    display: block;
+    background-color: var(--piggi--);
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 30px auto;
+}
+.manu-header a:hover{
+    background-color: rgb(194, 75, 6);
+}
+/* food */
+.food{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0, 0.2),rgba(0,0,0, 0.2)),url(img/banner/banner\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.food-data{
+    text-align: center;
+}
+.food-data h1{
+    text-align: center;
+    font-size: 40px;
+    left: 1px;
+    padding-top: 100px;
+    color: var(--piggi--);
+    text-shadow: 2px 2px white;
+}
+.food-data p{
+    text-align: center;
+    text-shadow: 2px 2px white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    color: black;
+}
+.food-data a{
+    width: 150px;
+    display: block;
+    background-color: var(--piggi--);
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 30px auto;
+}
+.food-data a:hover{
+    background-color: rgb(194, 75, 6);
+}
+/* product */
+.product{
+    margin-top: 100px;
+    width: 100%;
+    min-height: 70vh;
+    background-image: url(img/linear\ gradint\ background.png);
+    background-size: cover;
+    background-position: center;
+}
+.product-header h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    position: relative;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.459);
+    margin-bottom: 30px;
+}
+.product-header h1 span{
+    color: var(--piggi--);
+}
+.product-header h1:after{
+    content: "";
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    background-color: var(--piggi--);
+    bottom: 0;
+    margin-left: -100px;
+}
+.product-data{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.product-content{
+    background-color: white;
+    border: 1px solid grey;
+}
+.product-content article{
+    padding: 15px;
+}
+.product-content img{
+    width: 300px;
+    height: 250px;
+}
+.product-decs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+.product-title{
+    color: var(--piggi--);
+    font-weight: normal;
+}
+.product-price{
+    display: block;
+    font-weight: 400;
+    font-size: 23px;
+}
+.product-content a{
+    width: 150px;
+    display: block;
+    background-color: var(--piggi--);
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 30px auto;
+}
+.product-content a:hover{
+    background-color: rgb(194, 75, 6);
+}
+/* footer */
+footer{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0)),url(img/piggi.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 100px;
+}
+.footer-data{
+    background-color: rgba(255, 255, 255, 0.808);
+    width: 80%;
+    display: flex;
+    padding: 0 20px;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom: 4px solid var(--piggi--);
+    border-top: 4px solid var(--piggi--);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footer-content{
+    padding: 0 20px;
+}
+.footer-logo{
+    width: 250px;
+    height: 250px;
+}
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;padding-bottom: 10px;
+}
+.footer-icons i{
+    color: var(--piggi--);
+    margin: 0 10px;
+    font-size: 23px;
+}
+.footer-content h2{
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.footer-content h2 span{
+    color: var(--piggi--);
+}
+.footer-content h2 i{
+    margin-left: 5px;
+    font-weight: bold;
+    color: var(--piggi--);
+    font-size: 20px;
+}
+.footer-decs{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-info p{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-info span{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* -------------about page--------------- */
+/* header */
+.aboutHeader{
+    min-height: 80vh !important;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)),url(img/about\ hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* hero */
+.about-hero{
+    text-align: center;
+    margin-top: 150px;
+}
+.about{
+    width: 100%;
+    background-image: url(img/linear\ gradint\ background.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+}
+.about-header h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    left: 1px;
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+.about-header h1::after{
+    content: "";
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    background-color: var(--piggi--);
+    bottom: 0;
+    margin-left: -100px;
+}
+.about-data p{
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.about-data p span{
+    font-weight: bold;
+}
+.about-btn{
+    width: 150px;
+    display: block;
+    background-color: var(--piggi--);
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 30px auto;
+}
+.about-btn:hover{
+    background-color: rgb(194, 75, 6);
+}
+/* --------------contact page---------------- */
+/* about */
+.contactHeader{
+    min-height: 80vh !important;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.23)),url(img/contact\ hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* hero */
+.contact-hero{
+    text-align: center;
+    margin-top: 150px;
+}
+/* contact */
+.contact{
+    width: 100%;
+    background-image: url(img/linear\ gradint\ background.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+}
+.contact-header h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 60px;
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.contact-header h1::after{
+    content: "";
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    background-color: var(--piggi--);
+    bottom: 0;
+    margin-left: -100px;
+}
+.contact-data{
+    width: 65%;
+    margin: 0 auto;
+}
+.single-box{
+    display: flex;
+    justify-content: space-between;
+}
+.single-box div{
+    width: 49%;
+}
+.contact-data label{
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.inputs{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.212);
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.contact-data textarea{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.212);
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.btns{
+    width: 100%;
+}
+.btns button{
+    padding: 4px 50px;
+    background-color: var(--piggi--);
+    border: none;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    margin: 30px auto;
+}
+/* --------------order page------------------ */
+/* header */
+.orderHeader{
+    min-height: 80vh !important;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.23)),url(img/order\ hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* hero */
+.order-hero{
+    text-align: center;
+    margin-top: 150px;
+}
+/* order */
+.order{
+    margin-top: 100px;
+}
+.order-header h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-weight: normal;
+    position: relative;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.459);
+    margin-bottom: 30px;
+}
+.order-header h1 span{
+    color: var(--piggi--);
+}
+.order-header h1:after{
+    content: "";
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    background-color: var(--piggi--);
+    bottom: 0;
+    margin-left: -100px;
+}
+.order-catagories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 50;
+    margin-bottom: 60px;
+}
+.order-catagories h4{
+    font-size: 18px;
+    padding: 5px 15px;
+    border: 1px solid var(--piggi--);
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: normal;
+}
+.order-catagories .active{
+    background-color: var(--piggi--) !important;
+    color: white;
+}
+.order-data{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.order-content{
+    background-color: white;
+    border: 1px solid grey;
+}
+.order-content article{
+    padding: 15px;
+}
+.order-content img{
+    width: 350px;
+    height: 280px;
+}
+.order-decs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+.order-title{
+    color: var(--piggi--);
+    font-weight: normal;
+}
+.order-price{
+    display: block;
+    font-weight: 400;
+    font-size: 23px;
+}
+.order-content a{
+    width: 150px;
+    display: block;
+    background-color: var(--piggi--);
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 30px auto;
+}
+.order-content a:hover{
+    background-color: rgb(194, 75, 6);
+}
+.order-btn{
+    margin-top: 60px;
+}
+.order-btn a{
+    width: 150px;
+    padding: 5px;
+    background-color: var(--piggi--);
+    border: none;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 4px;
+
+}
+.order-deadline{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.order-deadline{
+    text-align: center;
+} 
+.order-deadline p{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.order-deadline h3{
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.order-deadline span{
+    color: var(--piggi--);
+}
